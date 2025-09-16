@@ -1,0 +1,31 @@
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stringart"
+version = "0.0.1"
+description = "Approximate images using one long string looped around nails on a canvas"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Marco Giunta", email = "mgiunta@sissa.it" }]
+dynamic = ["dependencies"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[project.optional-dependencies]
+test = ["pytest"]
+# ui = ["shiny"]
+ui = ["shiny[theme]"]
+
+[project.scripts]
+stringart = "stringart.cli:stringart_cli"
+stringart-ui = "stringart:stringart_app"
+
+[tool.setuptools.package-data]
+stringart = ["data/examples/*", "data/help.md"]

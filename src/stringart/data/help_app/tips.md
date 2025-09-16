@@ -1,0 +1,12 @@
+To ensure good visual quality in the final result, it may be necessary to preprocess the input image outside *StringArt*.
+
+Here are some tips:
+
+### Keep image constrast under control
+- If your image contains a extra bright spot, crossing that region will become almost forbidden for the algorithm, as there will be a large penalty for doing so. This means that the algorithm will draw too little in the bright region and too much elsewhere, resulting in an image that contains an (almost) empty spot and excessive black outside that part of the image. If you decrease the brightness of that part of the image the algorithm will be able to cross that region, it will just spend less time there - thus correctly reproducing the difference in brightness difference in the image, but with no hard constraints.
+- You can either preemptively decrease the brightness of bright spots or do so if the result looks too empty in the bright area/too dark outside of it.
+
+### Remove the background/trim the irrelevant portions of the image
+- The best results are obtained when your image contains a single element to reproduce, like for example a single human face (which is what you typically see in real-life applications of this class of algorithms). If there are many constrasting background elements the algorithm may struggle to reproduce everything; it's therefore recommended to at least crop your image, so that only e.g. the close-up face remains.
+- Another option is to use any AI sticker app (e.g. default Samsung gallery app) to extract only your main target, so that there is an empty background. If your app of choice returns a PNG image with a transparent background in place of the original one (i.e. it appends a 4th alpha channel after the RGB ones), please know that *StringArt* will deal with this automatically, so you don't have to worry about that.
+- The important thing to know is that in this case *StringArt* will replace the transparent background with the user-specified background color (see parameters help section); this can be anything, but a dark color (like the default dark gray) is recommended, as otherwise you may get the same issue described in the previous point. Try tweaking these RGB values if you see that the algorithm is struggling with the empty background (i.e. spending too much/too little time drawing lines there, etc.).
