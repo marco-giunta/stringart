@@ -45,13 +45,6 @@ stringart.image\_io module
    :show-inheritance:
    :undoc-members:
 
-.. stringart.main module
-.. ---------------------
-
-.. .. automodule:: stringart.main
-..    :members:
-..    :show-inheritance:
-..    :undoc-members:
 
 stringart.pathfinding module
 ----------------------------
@@ -85,13 +78,6 @@ stringart.transforms module
    :show-inheritance:
    :undoc-members:
 
-.. stringart.ui module
-.. ---------------------------
-
-.. .. automodule:: stringart.ui
-..    :members:
-..    :show-inheritance:
-..    :undoc-members:
 
 Module contents
 ---------------
