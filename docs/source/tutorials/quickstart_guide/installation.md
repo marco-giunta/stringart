@@ -64,20 +64,20 @@ Below you can find two ways to install the package for each version. If you don'
 ### Optional GUI install (shiny WebApp, experimental):
 - Direct install from GitHub:
     ```
-    pip install "git+https://github.com/marco-giunta/stringart.git#egg=stringart[ui]"
+    ppip install "stringart[ui] @ git+https://github.com/marco-giunta/stringart.git"
     ```
 - Alternative git clone install:
     ```
     cd <path where you want to git clone>
     git clone https://github.com/marco-giunta/stringart.git
     cd stringart
-    pip install stringart[ui]
+    pip install .[ui]
     ```
 
 ### Install & run tests
 - Direct install from GitHub:
     ```
-    pip install "git+https://github.com/marco-giunta/stringart.git#egg=stringart[test]"
+    pip install "stringart[test] @ git+https://github.com/marco-giunta/stringart.git"
     ```
 
 - Alternative git clone install:
@@ -95,7 +95,7 @@ Below you can find two ways to install the package for each version. If you don'
 ### Install both UI & test optional addons
 - Direct install from GitHub:
     ```
-    pip install "git+https://github.com/<your-username>/stringart.git#egg=stringart[ui,test]"
+    pip install "stringart[ui,test] @ git+https://github.com/marco-giunta/stringart.git"
     ```
 - Alternative git clone install:
     ```
