@@ -11,6 +11,9 @@ license = { file = "LICENSE" }
 authors = [{ name = "Marco Giunta", email = "mgiunta@sissa.it" }]
 dynamic = ["dependencies"]
 
+[tool.setuptools]
+include-package-data = true
+
 [tool.setuptools.packages.find]
 where = ["src"]
 exclude = ["tests"]
