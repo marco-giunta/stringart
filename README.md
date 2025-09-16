@@ -17,6 +17,8 @@ Main algorithm and package name based on [kaspar98/StringArt](https://github.com
 - improved performance thanks to caching, internal downscaling & some other tricks
 - improved usability: reparametrized algorithm to allow for a more intuitive and precise control of the output image
 
+Please check out [`stringart`'s online documentation](https://marco-giunta.github.io/stringart/) to read detailed installation and usage instructions; otherwise keep reading to get started quickly!
+
 ## Installation
 ### Virtual environment (optional)
 It's recommended to install and run *StringArt* in a separate virtual environment, using the tool of your choice.
@@ -49,6 +51,7 @@ conda activate stringart-env
 
 
 ### Installation types
+(If unsure, choose whether or not you want the optional experimental GUI, then use the corresponding `pip install ...` command)
 #### Standard install (API+CLI):
 
 - Direct install from GitHub:
@@ -63,7 +66,7 @@ conda activate stringart-env
     pip install .
     ```
 
-#### Optional GUI install (shiny WebApp):
+#### Optional GUI install (shiny WebApp, experimental):
 - Direct install from GitHub:
     ```
     pip install "git+https://github.com/marco-giunta/stringart.git#egg=stringart[ui]"

@@ -61,7 +61,7 @@ Below you can find two ways to install the package for each version. If you don'
     pip install .
     ```
 
-### Optional GUI install (shiny WebApp):
+### Optional GUI install (shiny WebApp, experimental):
 - Direct install from GitHub:
     ```
     pip install "git+https://github.com/marco-giunta/stringart.git#egg=stringart[ui]"
