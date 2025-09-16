@@ -30,4 +30,7 @@ stringart = "stringart.cli:stringart_cli"
 stringart-ui = "stringart:stringart_app"
 
 [tool.setuptools.package-data]
-stringart = ["data/demo_img/*", "data/help_app/*"]
+"stringart.data" = [
+    "demo_img/*",
+    "help_app/*"
+]
