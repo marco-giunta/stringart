@@ -1,4 +1,6 @@
 # `stringart` python package
+[![tests](https://github.com/marco-giunta/stringart/actions/workflows/stringart_tests.yml/badge.svg)](https://github.com/marco-giunta/stringart/actions/workflows/stringart_tests.yml)
+[![docs](https://github.com/marco-giunta/stringart/actions/workflows/stringart_docs_gh_pages.yml/badge.svg)](https://github.com/marco-giunta/stringart/actions/workflows/stringart_docs_gh_pages.yml)
 ## *StringArt* description
 *StringArt* lets you approximate an input image using a single continuous string looped around nails on the border of a canvas (see the documentation for an explanation of how the algorithm works).
 You can run it in three ways:
