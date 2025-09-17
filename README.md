@@ -80,12 +80,9 @@ conda activate stringart-env
     ```
 
 #### Install & run tests
-- Direct install from GitHub:
-    ```
-    pip install "stringart[test] @ git+https://github.com/marco-giunta/stringart.git"
-    ```
+*Remark*: the test suite itself is not included in the package distribution. To run tests, you must clone the repository so you have access to the `tests/` folder; simply using `pip install "stringart[test] @ git+https://github.com/marco-giunta/stringart.git"` isn't enough.
 
-- Alternative git clone install:
+- Clone the repository and install with test dependencies:
     ```
     cd <path where you want to git clone>
     git clone https://github.com/marco-giunta/stringart.git
@@ -98,11 +95,8 @@ conda activate stringart-env
     ```
 
 #### Install both UI & test optional addons
-- Direct install from GitHub:
-    ```
-    pip install "stringart[ui,test] @ git+https://github.com/marco-giunta/stringart.git"
-    ```
-- Alternative git clone install:
+*Remark*: as above, cloning is required if you want to actually run the tests.
+- Clone and install:
     ```
     cd <path where you want to git clone>
     git clone https://github.com/marco-giunta/stringart.git
@@ -111,7 +105,7 @@ conda activate stringart-env
     ```
 
 #### Developer installation
-To work on the code clone the repo, then install in editable mode:
+To work on the code, clone the repo and install in editable mode with test and UI dependencies:
 ```
 cd <path where you want to git clone>
 git clone https://github.com/marco-giunta/stringart.git

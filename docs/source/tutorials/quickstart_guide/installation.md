@@ -74,13 +74,10 @@ Below you can find two ways to install the package for each version. If you don'
     pip install .[ui]
     ```
 
-### Install & run tests
-- Direct install from GitHub:
-    ```
-    pip install "stringart[test] @ git+https://github.com/marco-giunta/stringart.git"
-    ```
+#### Install & run tests
+*Remark*: the test suite itself is not included in the package distribution. To run tests, you must clone the repository so you have access to the `tests/` folder; simply using `pip install "stringart[test] @ git+https://github.com/marco-giunta/stringart.git"` isn't enough.
 
-- Alternative git clone install:
+- Clone the repository and install with test dependencies:
     ```
     cd <path where you want to git clone>
     git clone https://github.com/marco-giunta/stringart.git
@@ -92,12 +89,9 @@ Below you can find two ways to install the package for each version. If you don'
     pytest
     ```
 
-### Install both UI & test optional addons
-- Direct install from GitHub:
-    ```
-    pip install "stringart[ui,test] @ git+https://github.com/marco-giunta/stringart.git"
-    ```
-- Alternative git clone install:
+#### Install both UI & test optional addons
+*Remark*: as above, cloning is required if you want to actually run the tests.
+- Clone and install:
     ```
     cd <path where you want to git clone>
     git clone https://github.com/marco-giunta/stringart.git
@@ -105,8 +99,8 @@ Below you can find two ways to install the package for each version. If you don'
     pip install .[ui,test]
     ```
 
-### Developer installation
-To work on the code clone the repo, then install in editable mode:
+#### Developer installation
+To work on the code, clone the repo and install in editable mode with test and UI dependencies:
 ```
 cd <path where you want to git clone>
 git clone https://github.com/marco-giunta/stringart.git
