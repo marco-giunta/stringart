@@ -32,7 +32,7 @@ For example using python's default `venv`:
 
     *Linux/macOS*:
     ```
-    source stringart-env/bin/activate
+    source stringart-venv/bin/activate
     ```
     *Windows*:
     ```

@@ -15,7 +15,7 @@ For example to activate the virtual environment using python's default `venv`:
 
     *Linux/macOS*:
     ```
-    source stringart-env/bin/activate
+    source stringart-venv/bin/activate
     ```
     *Windows*:
     ```
